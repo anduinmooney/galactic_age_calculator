@@ -17,3 +17,12 @@ describe('mercuryAge', function() {
     expect(earthAge * yearToSeconds * .24).toEqual(1513728);
   });
 });
+
+ describe('venusAge', function() {
+
+    it('should correctly convert years into seconds and multiply seconds to venus solar year', function() {
+      let earthAge = 2;
+      const yearToSeconds = 3153600;
+      expect(earthAge * yearToSeconds * .62).toEqual(3910463);
+  });
+});

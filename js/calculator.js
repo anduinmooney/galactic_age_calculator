@@ -11,4 +11,11 @@ export class Age {
       let ageConvertedIntoMercuryAge = earthAge * yearToSeconds * .24;
        return ageConvertedIntoMercuryAge;
      }
+   venusAge(earthAge){
+      const yearToSeconds = 31536000;
+       let ageConvertedIntoVenusAge = earthAge * yearToSeconds * .62;
+        return ageConvertedIntoVenusAge;
+      }
+
+
 }
