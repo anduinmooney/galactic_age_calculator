@@ -41,6 +41,6 @@ import { Age } from './../js/calculator.js';
      it('should correctly convert years into seconds and multiply seconds to jupiters solar year', function() {
        let earthAge = 2;
        const yearToSeconds = 3153600;
-       expect(earthAge * yearToSeconds * 11.86).toEqual(74803391); //seconds
+       expect(earthAge * yearToSeconds * 11.86).toEqual(74803392); //seconds
    });
   });

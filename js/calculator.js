@@ -19,8 +19,14 @@ export class Age {
 
   marsAge(earthAge){
      const yearToSeconds = 31536000;
-      let ageConvertedIntoVenusAge = earthAge * yearToSeconds * 1.88;
-       return ageConvertedIntoVenusAge;
+      let ageConvertedIntoMarsAge = earthAge * yearToSeconds * 1.88;
+       return ageConvertedIntoMarsAge;
      }
+
+  jupiterAge(earthAge){
+    const yearToSeconds = 31536000;
+     let ageConvertedIntoJupiterAge = earthAge * yearToSeconds * 11.86;
+      return ageConvertedIntoJupiterAge;
+    }
 
 }
