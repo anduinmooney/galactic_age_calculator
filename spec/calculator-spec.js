@@ -32,6 +32,6 @@ import { Age } from './../js/calculator.js';
      it('should correctly convert years into seconds and multiply seconds to mars solar year', function() {
        let earthAge = 2;
        const yearToSeconds = 3153600;
-       expect(earthAge * yearToSeconds * 1.88).toEqual(11857535);
+       expect(earthAge * yearToSeconds * 1.88).toEqual(11857536);
    });
   });
