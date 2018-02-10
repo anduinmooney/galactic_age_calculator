@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will grab your age and calculate how old you would be according to different planet's solar years. _
+_This application will grab your age and calculate how old you would be according to different planet's solar years._
 
 
 ## Installation
