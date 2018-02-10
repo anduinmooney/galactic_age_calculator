@@ -25,28 +25,28 @@ var Age = exports.Age = function () {
     key: "mercuryAge",
     value: function mercuryAge(earthAge) {
       var yearToSeconds = 31536000;
-      var ageConvertedIntoMercuryAge = earthAge * yearToSeconds * .24;
+      var ageConvertedIntoMercuryAge = earthAge * yearToSeconds * .24 / 60 / 60 / 24 / 365;
       return ageConvertedIntoMercuryAge;
     }
   }, {
     key: "venusAge",
     value: function venusAge(earthAge) {
       var yearToSeconds = 31536000;
-      var ageConvertedIntoVenusAge = earthAge * yearToSeconds * .62;
+      var ageConvertedIntoVenusAge = earthAge * yearToSeconds * .62 / 60 / 60 / 24 / 365;
       return ageConvertedIntoVenusAge;
     }
   }, {
     key: "marsAge",
     value: function marsAge(earthAge) {
       var yearToSeconds = 31536000;
-      var ageConvertedIntoMarsAge = earthAge * yearToSeconds * 1.88;
+      var ageConvertedIntoMarsAge = earthAge * yearToSeconds * 1.88 / 60 / 60 / 24 / 365;
       return ageConvertedIntoMarsAge;
     }
   }, {
     key: "jupiterAge",
     value: function jupiterAge(earthAge) {
       var yearToSeconds = 31536000;
-      var ageConvertedIntoJupiterAge = earthAge * yearToSeconds * 11.86;
+      var ageConvertedIntoJupiterAge = earthAge * yearToSeconds * 11.86 / 60 / 60 / 24 / 365;
       return ageConvertedIntoJupiterAge;
     }
   }]);
@@ -63,11 +63,12 @@ $(document).ready(function () {
   $('#age-form').submit(function (event) {
     event.preventDefault();
     var age = $("#age").val();
-    var seconds = ageConvertedIntoSeconds(age);
-    var mercury = ageConvertedIntoMercuryAge(age);
-    var venus = ageConvertedIntoVenusAge(age);
-    var mars = ageConvertedIntoMarsAge(age);
-    var jupiter = ageConvertedIntoJupiterAge(age);
+    var solarAge = new _calculator.Age(age);
+    var seconds = solarAge.secondsInYear(age);
+    var mercury = solarAge.mercuryAge(age);
+    var venus = solarAge.venusAge(age);
+    var mars = solarAge.marsAge(age);
+    var jupiter = solarAge.jupiterAge(age);
     $("#seconds").text(seconds);
     $("#mercury").text(mercury);
     $("#venus").text(venus);

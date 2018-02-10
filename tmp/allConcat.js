@@ -4,11 +4,12 @@ $(document).ready(function() {
   $('#age-form').submit(function(event){
     event.preventDefault();
     let age = $("#age").val();
-    let seconds = ageConvertedIntoSeconds(age);
-    let mercury = ageConvertedIntoMercuryAge(age);
-    let venus = ageConvertedIntoVenusAge(age);
-    let mars = ageConvertedIntoMarsAge(age);
-    let jupiter = ageConvertedIntoJupiterAge(age);
+    let solarAge = new Age(age);
+    let seconds = solarAge.secondsInYear(age);
+    let mercury = solarAge.mercuryAge(age);
+    let venus = solarAge.venusAge(age);
+    let mars = solarAge.marsAge(age);
+    let jupiter = solarAge.jupiterAge(age);
     $("#seconds").text(seconds);
     $("#mercury").text(mercury);
     $("#venus").text(venus);

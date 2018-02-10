@@ -4,8 +4,8 @@ import { Age } from './../js/calculator.js';
 
     it('should correctly convert years into seconds', function() {
       let earthAge = 2;
-      const yearToSeconds = 3153600;
-      expect(earthAge * yearToSeconds).toEqual(6307200); //seconds
+      const yearToSeconds = 31536000;
+      expect(earthAge * yearToSeconds).toEqual(63072000); //seconds
     });
   });
 
@@ -13,8 +13,8 @@ import { Age } from './../js/calculator.js';
 
     it('should correctly convert years into seconds and multiply seconds to mercurys solar year', function() {
       let earthAge = 2;
-      const yearToSeconds = 3153600;
-      expect(earthAge * yearToSeconds * .24).toEqual(1513728); //seconds
+      const yearToSeconds = 31536000;
+      expect(earthAge * yearToSeconds * .24).toEqual(15137280); //seconds
     });
   });
 
@@ -22,8 +22,8 @@ import { Age } from './../js/calculator.js';
 
     it('should correctly convert years into seconds and multiply seconds to venus solar year', function() {
       let earthAge = 2;
-      const yearToSeconds = 3153600;
-      expect(earthAge * yearToSeconds * .62).toEqual(3910464); //seconds
+      const yearToSeconds = 31536000;
+      expect(earthAge * yearToSeconds * .62).toEqual(39104640); //seconds
     });
   });
 
@@ -31,8 +31,8 @@ import { Age } from './../js/calculator.js';
 
      it('should correctly convert years into seconds and multiply seconds to mars solar year', function() {
        let earthAge = 2;
-       const yearToSeconds = 3153600;
-       expect(earthAge * yearToSeconds * 1.88).toEqual(11857536); //seconds
+       const yearToSeconds = 31536000;
+       expect(earthAge * yearToSeconds * 1.88).toEqual(118575360); //seconds
    });
   });
 
@@ -40,7 +40,7 @@ import { Age } from './../js/calculator.js';
 
      it('should correctly convert years into seconds and multiply seconds to jupiters solar year', function() {
        let earthAge = 2;
-       const yearToSeconds = 3153600;
-       expect(earthAge * yearToSeconds * 11.86).toEqual(74803392); //seconds
+       const yearToSeconds = 31536000;
+       expect(earthAge * yearToSeconds * 11.86).toEqual(748033920); //seconds
    });
   });
