@@ -6,7 +6,7 @@
 
 ## Description
 
-__
+_This application will grab your age and calculate how old you would be according to different planet's solar years. _
 
 
 ## Installation
@@ -35,7 +35,7 @@ _Contact me at anduinmooney@gmail.com_
 
 ## Technologies Used
 
-_JavaScript, Atom, NPM, Jasmine, Karma, Gulp, Bower, Browserify, Watchify_
+_JavaScript, Atom, NPM, Jasmine, Karma, Gulp, Bower, Browserify, Watchify, ES6_
 
 ### License
 
