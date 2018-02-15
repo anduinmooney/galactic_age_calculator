@@ -8,7 +8,7 @@
 
 _This application will grab your age and calculate how old you would be according to different planet's solar years._
 
-* _Possible Future Additions_
+### _Possible Future Additions_
 
 _If I were to continue working on this application, I would love to add all of the planets in the solar system to the age conversion. I would also like to be able to add the functionality to get an accurate life expectency with different genders and the conditions of the planet. I would also like to add the average life expectency for each planet, so the application would inform the user if they were born on that planet, they would know how many years they would be alive befire they died._
 
